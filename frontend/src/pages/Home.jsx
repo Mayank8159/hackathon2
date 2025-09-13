@@ -20,16 +20,16 @@ export default function Home() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
-            to="/dashboard"
+            to="/contact-helpline"
             className="bg-white text-teal-800 font-semibold px-6 py-3 rounded-full hover:bg-slate-100 transition duration-300 shadow-md"
           >
-            Explore Dashboard
+            Report Issue
           </Link>
           <Link
-            to="/report"
+            to="/dashboard"
             className="border border-teal-800 text-teal-800 px-6 py-3 rounded-full hover:bg-teal-800 hover:text-white transition duration-300 shadow-md"
           >
-            Report Issue
+            Climate Insights
           </Link>
         </div>
       </div>
