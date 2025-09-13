@@ -48,16 +48,6 @@ export default function Home() {
         ))}
       </div>
 
-      {/* CTA Footer */}
-      <div className="mt-24 text-center">
-        <p className="text-gray-700 mb-4 text-lg">Join the movement. Every action counts.</p>
-        <Link
-          to="/signup"
-          className="bg-white text-indigo-700 font-medium px-6 py-3 rounded-full hover:bg-slate-100 transition duration-300 shadow-md"
-        >
-          Get Started
-        </Link>
-      </div>
     </section>
   );
 }
