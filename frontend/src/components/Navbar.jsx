@@ -10,7 +10,7 @@ export default function Navbar() {
 
   const navLinks = [
     { label: "Home", path: "/" },
-    { label: "Dashboard", path: "/dashboard" },
+    { label: "Climate Analysis", path: "/dashboard" },
     { label: "Contact Helpline", path: "/contact-helpline" },
     { label: "Disaster Management", path: "/guide" },
   ];
