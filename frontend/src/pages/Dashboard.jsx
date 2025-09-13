@@ -30,7 +30,7 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-sky-950 to-indigo-950 text-white">
-      <div className="max-w-6xl mx-auto px-6 py-10 space-y-10">
+      <div className="max-w-6xl mx-auto px-6 py-10 space-y-10 mt-15">
         <Header />
 
         <div className="bg-white/5 backdrop-blur-md rounded-xl shadow-lg p-6 ring-1 ring-white/10 transition-all duration-300 hover:ring-white/20">
