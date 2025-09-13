@@ -189,7 +189,7 @@ export default function DisasterGuide() {
       </div>
 
       {/* Disaster Details */}
-      <section className="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-6 mb-12">
+      <section className="max-w-3xl mx-auto bg-gradient-to-br from-green-100 via-emerald-200 to-teal-300 border border-shadow-md rounded-lg p-6 mb-12">
         <h2 className="text-2xl font-semibold text-blue-700">{current.name}</h2>
         <p className="mt-2 text-gray-700">{current.overview}</p>
 
