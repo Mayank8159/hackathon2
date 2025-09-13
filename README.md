@@ -1,4 +1,3 @@
-Absolutely, Mayank. Here's a clean, professional README.md tailored for your Climate Resilient Web project. It highlights your vision, tech stack, features, and setup instructions—perfect for GitHub or portfolio presentation.
 
 🌍 Climate Resilient Web
 A responsive, data-driven disaster management guide designed to empower communities with real-time climate insights, emergency protocols, and preparedness tools. Built for clarity, accessibility, and emotional impact.
@@ -73,4 +72,5 @@ Mayank Kumar Sharma
 B.Tech CSE (AI & ML) @ IEM Newtown
 Frontend architect | Disaster tech innovator | Real-world impact enthusiast
  study to go with it.
+
 
