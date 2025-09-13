@@ -10,7 +10,7 @@ export default function Navbar() {
 
   const navLinks = [
     { label: "Home", path: "/" },
-    { label: "Guide", path: "/guide" },
+    { label: "Dashboard", path: "/dashboard" },
     { label: "Contact Helpline", path: "/contact-helpline" },
     { label: "SOS", path: "/sos" },
   ];
