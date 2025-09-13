@@ -12,7 +12,7 @@ export default function Navbar() {
     { label: "Home", path: "/" },
     { label: "Dashboard", path: "/dashboard" },
     { label: "Contact Helpline", path: "/contact-helpline" },
-    { label: "SOS", path: "/sos" },
+    { label: "Disaster Management", path: "/guide" },
   ];
 
   return (

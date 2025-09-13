@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Dashboard from './pages/Dashboard';
 import Contact from './pages/Contact';
+import Guide from './pages/Guide';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/contact-helpline" element={<Contact />} />
+        <Route path="/guide" element={<Guide />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

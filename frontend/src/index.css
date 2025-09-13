@@ -15,3 +15,8 @@
 .cl-drawerRoot{
     z-index: 10;
 }
+
+/* Hide scrollbar for all browsers */
+::-webkit-scrollbar {
+  display: none;
+}
