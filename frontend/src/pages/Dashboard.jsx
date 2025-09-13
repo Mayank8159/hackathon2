@@ -10,7 +10,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/api/climate?lat=22.5726&lon=88.3639')
+      .get('https://hackathon2-2-2zka.onrender.com/api/climate?lat=22.5726&lon=88.3639')
       .then((res) => setClimateData(res.data))
       .catch((err) => console.error(err));
   }, []);
