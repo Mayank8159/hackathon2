@@ -12,7 +12,16 @@ import {
 ChartJS.register(LineElement, PointElement, CategoryScale, LinearScale, Tooltip, Legend);
 
 export default function ChartPanel({ time, temperature, humidity, windSpeed, currentIndex }) {
-  const labels = time.map((t) =>
+  // Define how many data points to show per view
+  const windowSize = 12;
+
+  // Slice data based on currentIndex
+  const slicedTime = time.slice(currentIndex, currentIndex + windowSize);
+  const slicedTemperature = temperature.slice(currentIndex, currentIndex + windowSize);
+  const slicedHumidity = humidity.slice(currentIndex, currentIndex + windowSize);
+  const slicedWindSpeed = windSpeed.slice(currentIndex, currentIndex + windowSize);
+
+  const labels = slicedTime.map((t) =>
     new Date(t).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
   );
 
@@ -46,7 +55,7 @@ export default function ChartPanel({ time, temperature, humidity, windSpeed, cur
             datasets: [
               {
                 label: 'Temperature (°C)',
-                data: temperature,
+                data: slicedTemperature,
                 borderColor: '#f97316',
                 backgroundColor: 'rgba(249, 115, 22, 0.2)',
               },
@@ -63,7 +72,7 @@ export default function ChartPanel({ time, temperature, humidity, windSpeed, cur
             datasets: [
               {
                 label: 'Humidity (%)',
-                data: humidity,
+                data: slicedHumidity,
                 borderColor: '#0ea5e9',
                 backgroundColor: 'rgba(14, 165, 233, 0.2)',
               },
@@ -80,7 +89,7 @@ export default function ChartPanel({ time, temperature, humidity, windSpeed, cur
             datasets: [
               {
                 label: 'Wind Speed (m/s)',
-                data: windSpeed,
+                data: slicedWindSpeed,
                 borderColor: '#10b981',
                 backgroundColor: 'rgba(16, 185, 129, 0.2)',
               },
